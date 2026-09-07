@@ -1,5 +1,20 @@
 ![gtfsmerge](logo.png)
 
+> [!IMPORTANT]
+> **gtfsmerge has moved into [planarnetwork/gb-transit](https://github.com/planarnetwork/gb-transit).**
+>
+> Development continues at
+> [`apps/gtfsmerge`](https://github.com/planarnetwork/gb-transit/blob/master/apps/gtfsmerge/README.md),
+> where it shares one GTFS schema, reader and writer with `cif2gtfs` and `transxchange2gtfs` — so a
+> rail feed and a bus feed can be merged into one without reconciling their stop ids.
+>
+> The npm package is still `gtfsmerge` and is published from there. This repository is kept for its
+> history and issues; please open new ones against
+> [gb-transit](https://github.com/planarnetwork/gb-transit/issues).
+>
+> Some things changed in the move, including two bugs in the generated walk transfers — see
+> [the baseline](https://github.com/planarnetwork/gb-transit/blob/master/apps/gtfsmerge/fixtures/BASELINE.md).
+
 [![Travis](https://img.shields.io/travis/planarnetwork/gtfsmerge.svg?style=flat-square)](https://travis-ci.org/planarnetwork/gtfsmerge) ![npm](https://img.shields.io/npm/v/gtfsmerge.svg?style=flat-square) ![David](https://img.shields.io/david/planarnetwork/gtfsmerge.svg?style=flat-square)
 
 gtfsmerge merges multiple GTFS zip files into a single zip.
